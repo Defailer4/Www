@@ -1,14 +1,21 @@
-public class Geeks {
-    public static void main(String[] args) {
+import java.util.Stack;
 
-        // initializing array
-        int[] arr = { 40,55,63,17,22,68};
+public class Ananas
+{
+    public static void main(String[] args) 
+    {
+        // Create a new stack
+        Stack<Integer> s = new Stack<>();
 
-        // size of array
-        int n = arr.length;
+        // Push elements onto the stack
+        s.push(1);
+        s.push(2);
+        s.push(3);
+        s.push(4);
 
-        // traversing array
-        for (int i = 0; i < n; i++)
-            System.out.print(arr[i] + " ");
+        // Pop elements from the stack
+        while(!s.isEmpty()) {
+            System.out.println(s.pop());
+        }
     }
 }
